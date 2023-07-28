@@ -1,0 +1,337 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    /* colors */
+    --clr-dark: 230 35% 7%;
+    --clr-light: 231 77% 90%;
+    --clr-white: 0 0% 100%;
+
+    /* font-sizes */
+    --fs-900: 9.375rem;
+    --fs-800: 6.25rem;
+    --fs-700: 3.5rem;
+    --fs-600: 2rem;
+    --fs-500: 1.75rem;
+    --fs-400: 1.125rem;
+    --fs-300: 1rem;
+    --fs-200: 0.875rem;
+
+    /* font-families */
+    --ff-serif: "Bellefair", serif;
+    --ff-sans-cond: "Barlow Condensed", sans-serif;
+    --ff-sans-normal: "Barlow", sans-serif;
+}
+
+body {
+    background: url(./assets/home/background-home-desktop.jpg);
+    font-family: 'Bellefair', serif !important;
+}
+
+
+a {
+    list-style: none !important;
+}
+
+/* Home page */
+
+/* Nav */
+
+.navbar-nav {
+    border: none;
+    background-color: rgba(255, 255, 255, 0.068) !important;
+    backdrop-filter: blur(10px) !important;
+    padding-left: 4.7rem !important;
+    padding-right: 2rem;
+    padding-top: 1.4rem;
+    padding-bottom: 1.4rem;
+}
+
+.nav-link {
+    font-family: 'Barlow Condensed';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    letter-spacing: 2.7px;
+
+    color: #FFFFFF;
+
+}
+
+.nav-link span {
+    padding-right: 3px;
+    font-weight: 700;
+    line-height: 19px;
+    letter-spacing: 2.7px;
+    font-family: 'Barlow Condensed'
+}
+
+.nav-link:hover {
+    color: #FFFFFF;
+    border-bottom: 2px solid white;
+    border-radius: 2px;
+
+}
+
+.nav-item .active {
+    color: white !important;
+    border-bottom: 2px solid white;
+    border-radius: 2px;
+    border-width: 2px;
+
+}
+
+.the-line {
+
+    position: absolute;
+    width: 490px;
+    height: 1px;
+    left: 167px;
+    top: 50px;
+
+    background: #FFFFFF;
+    mix-blend-mode: normal;
+    opacity: 0.25;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+
+}
+
+
+.nav-link {
+    padding-bottom: 1rem;
+}
+
+
+.nav-dot.active div {
+    opacity: 1 !important;
+}
+
+.crew-item {
+    display: flex;
+}
+
+.tab-list {
+    display: block;
+}
+
+.circle {
+    width: 60px;
+    height: 60px;
+
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 23px;
+
+    border-radius: 80px;
+    border: 1px solid #FFF;
+    opacity: 0.25;
+
+}
+
+.circle .number {
+    text-align: center;
+    color: white;
+    opacity: 1 !important;
+}
+
+.circle:hover {
+    background-color: rgb(82, 82, 82) !important;
+    opacity: 1 !important;
+
+}
+
+
+.technology-item {
+    display: flex;
+}
+
+.navbar-toggler {
+    background-color: rgb(82, 82, 82) !important;
+    /* Replace with your desired transparent color */
+    border: none;
+
+
+    box-shadow: 0 0 5px rgba(119, 118, 118, 0.2) !important;
+    /* Replace with your desired box shadow color and size */
+}
+
+
+
+
+
+
+
+
+
+/* Custom CSS for active tab */
+
+
+.circle.current-tab {
+    background-color: white !important;
+    border-color: white !important;
+}
+
+.circle.current-tab .number {
+    color: black !important;
+}
+
+.circle .number {
+    font-size: 16px !important;
+    font-weight: bold !important;
+    color: white !important;
+    z-index: 6 !important;
+}
+
+
+
+
+
+/* Existing styles for circle elements */
+.circle {
+    width: 60px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 23px;
+    border-radius: 80px;
+    border: 1px solid #FFF;
+    opacity: 0.25;
+}
+
+.circle .number {
+    text-align: center;
+    color: white;
+    opacity: 1 !important;
+}
+
+/* New styles for active-tab */
+.circle.active-tab {
+    background-color: white !important;
+    border-color: white !important;
+}
+
+.circle.active-tab .number {
+    color: black !important;
+}
+
+/* media queries */
+
+@media only screen and (max-width: 1000px) {
+    .the-line {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    body {
+        background: url(./assets/technology/background-technology-mobile.jpg) !important;
+        background-size: cover !important;
+
+    }
+
+    #navbarSupportedContent ul {
+        border-radius: 20px;
+        margin-top: 3rem;
+
+    }
+
+    #technology-intro-details {
+        font-size: 29px !important;
+        margin-right: 2.8rem !important;
+    }
+
+    #technology-intro-details span {
+        font-size: 29px !important;
+    }
+
+    #tech-full {
+        text-align: center !important;
+        align-items: center !important;
+        justify-content: center !important;
+        margin-right: 30px !important;
+    }
+
+    .tabs-and-content {
+        display: block !important;
+
+    }
+
+    .tabs-and-content div ul {
+        display: flex !important;
+        margin: 0 !important;
+        padding: 0 !important;
+    }
+
+    .technology-item {
+        margin: 0 !important;
+        padding: 0 !important;
+        display: flex !important;
+        flex-direction: column-reverse !important;
+    }
+
+    .technology-item div {
+        margin: 0 !important;
+        padding: 0 !important;
+    }
+
+    .technology-item picture {
+        margin: 0 !important;
+        padding: 0 !important;
+        margin-right: 150px !important;
+        max-width: 100% !important;
+        height: auto !important;
+        margin-bottom: 2rem !important;
+
+
+    }
+
+    .technology-item picture img {
+        margin-right: 3rem !important;
+        margin-right: 50px !important;
+        width: 100% !important;
+
+    }
+
+    .technology-item div h1 {
+        font-size: 24px !important;
+        margin: 0 !important;
+        padding: 0 !important;
+    }
+
+    .technology-item div .tech-item-name {
+        font-size: 30px !important;
+        margin: 0 !important;
+        padding: 0 !important;
+    }
+
+    .technology-item div p {
+        font-size: 16px !important;
+        margin-top: 1rem !important;
+    }
+
+    .tabs .mt-5 {
+        margin: 0 !important;
+        padding: 0 !important;
+        width: 10px !important;
+    }
+
+
+
+
+
+    .tech-num-all li {
+        margin: 0 !important;
+        padding: 0 !important;
+        margin-left: 4.1rem !important;
+    }
+
+    .tech-num-all li:first-child {
+        padding-bottom: 30px !important;
+    }
+}

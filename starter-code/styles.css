@@ -1,0 +1,712 @@
+/* CSS Reset: Reset margin and padding for all elements */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* Global CSS Variables */
+:root {
+    /* Define colors using HSL (Hue, Saturation, Lightness) */
+    --clr-dark: 230 35% 7%;
+    /* Dark color */
+    --clr-light: 231 77% 90%;
+    /* Light color */
+    --clr-white: 0 0% 100%;
+    /* White color */
+
+    /* Define font sizes */
+    --fs-900: 9.375rem;
+    /* Extra large font size */
+    --fs-800: 6.25rem;
+    /* Large font size */
+    --fs-700: 3.5rem;
+    /* Medium font size */
+    --fs-600: 2rem;
+    /* Regular font size */
+    --fs-500: 1.75rem;
+    /* Small font size */
+    --fs-400: 1.125rem;
+    /* Smaller font size */
+    --fs-300: 1rem;
+    /* Even smaller font size */
+    --fs-200: 0.875rem;
+    /* Very small font size */
+
+    /* Define font families */
+    --ff-serif: "Bellefair", serif;
+    /* Serif font family */
+    --ff-sans-cond: "Barlow Condensed", sans-serif;
+    /* Condensed Sans-serif font family */
+    --ff-sans-normal: "Barlow", sans-serif;
+    /* Normal Sans-serif font family */
+}
+
+/* Body Styles */
+body {
+    /* Set the background image */
+    background: url(./assets/home/background-home-desktop.jpg);
+
+    /* Use Bellefair serif font as the default font family for the whole page */
+    font-family: 'Bellefair', serif !important;
+}
+
+/* Home Page Styles */
+
+/* Navigation Styles */
+.navbar-nav {
+    /* Remove border and apply a semi-transparent background with blur effect */
+    border: none;
+    background-color: rgba(255, 255, 255, 0.068) !important;
+    backdrop-filter: blur(10px) !important;
+    padding-left: 4.7rem !important;
+    /* Add left padding */
+    padding-right: 2rem;
+    /* Add right padding */
+    padding-top: 1.4rem;
+    /* Add top padding */
+    padding-bottom: 1.4rem;
+    /* Add bottom padding */
+}
+
+/* Navigation Link Styles */
+.nav-link {
+    /* Use Barlow Condensed font for navigation links */
+    font-family: 'Barlow Condensed';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    /* Set font size for the navigation links */
+    line-height: 19px;
+    /* Set line height for the navigation links */
+    letter-spacing: 2.7px;
+    /* Add letter spacing for the navigation links */
+    color: #FFFFFF;
+    /* Set text color for the navigation links */
+}
+
+/* Navigation Link Span Styles */
+.nav-link span {
+    padding-right: 3px;
+    /* Add right padding to the navigation link span */
+    font-weight: 700;
+    /* Set font weight for the navigation link span */
+    line-height: 19px;
+    /* Set line height for the navigation link span */
+    letter-spacing: 2.7px;
+    /* Add letter spacing for the navigation link span */
+    font-family: 'Barlow Condensed';
+    /* Use Barlow Condensed font for the navigation link span */
+}
+
+/* Styles for navigation links when hovered */
+.nav-link:hover {
+    color: #FFFFFF;
+    /* Change text color to white on hover */
+    border-bottom: 2px solid white;
+    /* Add a white bottom border on hover */
+    border-radius: 2px;
+    /* Add slight border radius for a softer look on hover */
+}
+
+/* Styles for the active navigation item */
+.nav-item .active {
+    color: white !important;
+    /* Set text color to white for the active item */
+    border-bottom: 2px solid white;
+    /* Add a white bottom border to indicate active state */
+    border-radius: 2px;
+    /* Add slight border radius for a softer look */
+    border-width: 2px;
+    /* Increase the border width for better visibility */
+}
+
+/* Horizontal line style */
+.the-line {
+    position: absolute;
+    width: 490px;
+    height: 1px;
+    left: 167px;
+    top: 50px;
+    background: #FFFFFF;
+    /* Set line color to white */
+    mix-blend-mode: normal;
+    /* Define mix-blend-mode for blending with background */
+    opacity: 0.25;
+    /* Set line opacity */
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    /* Add a subtle shadow effect */
+}
+
+/* Sub-heading style */
+#sub-head {
+    height: 20px;
+    left: 0.11%;
+    right: 15.67%;
+    top: calc(50% - 34px/2 - 174px);
+    /* Position the sub-heading */
+    font-family: 'Barlow Condensed';
+    /* Use Barlow Condensed font */
+    font-style: normal;
+    font-weight: 400;
+    font-size: 28px;
+    /* Set font size for the sub-heading */
+    line-height: 34px;
+    /* Set line height for the sub-heading */
+    letter-spacing: 4.725px;
+    /* Add letter spacing for the sub-heading */
+    color: #D0D6F9;
+    /* Set text color for the sub-heading */
+}
+
+/* Main heading style */
+#main-head {
+    height: 100px;
+    left: 0%;
+    right: 1.11%;
+    top: 20px;
+    margin-bottom: 50px;
+    /* Add margin at the bottom for spacing */
+    font-family: 'Bellefair';
+    /* Use Bellefair font for the main heading */
+    font-style: normal;
+    font-weight: 400;
+    font-size: 110px;
+    /* Set large font size for the main heading */
+    line-height: 172px;
+    /* Set line height for the main heading */
+    color: #FFFFFF;
+    /* Set text color for the main heading */
+}
+
+/* Styling for the "explain" section */
+#explain {
+    height: 100px;
+    /* Set the height of the element */
+    left: 0.11%;
+    /* Position the element from the left */
+    right: 1.22%;
+    /* Position the element from the right */
+    top: 20px;
+    /* Position the element from the top */
+
+    font-family: 'Barlow';
+    /* Use Barlow font for the text */
+    font-style: normal;
+    font-weight: 400;
+    /* Set font weight for the text */
+    font-size: 14px;
+    /* Set font size for the text */
+    line-height: 32px;
+    /* Set line height for the text */
+    box-sizing: border-box;
+    /* Include padding and border in element's total width and height */
+    width: 390px;
+    /* Set the width of the element */
+    color: #D0D6F9;
+    /* Set text color */
+}
+
+/* Styling for the large button */
+.large-button {
+    position: relative;
+    /* Position the button relative to its normal position */
+    z-index: 1;
+    /* Set the stack order for the button */
+    display: inline-grid;
+    /* Use inline-grid to align content */
+    place-items: center;
+    /* Center the content inside the button */
+    padding: 0 4.7em;
+    /* Add horizontal padding */
+    border-radius: 50%;
+    /* Make the button circular by setting border-radius to 50% */
+    aspect-ratio: 1;
+    /* Maintain a 1:1 aspect ratio to keep the button circular */
+    text-decoration: none;
+    /* Remove text decoration for links */
+    width: 274px;
+    /* Set the width of the button */
+    height: 274px;
+    /* Set the height of the button */
+    flex-shrink: 0;
+    /* Prevent the button from shrinking when inside a flex container */
+}
+
+/* Styles for the effect on the large button when hovered or focused */
+.large-button::after {
+    content: '';
+    /* Add content for pseudo-element */
+    position: absolute;
+    /* Position the pseudo-element absolutely */
+    z-index: -1;
+    /* Place it below the main content of the button */
+    width: 100%;
+    /* Set the width to cover the entire button */
+    height: 100%;
+    /* Set the height to cover the entire button */
+    background: hsl(var(--clr-white) / .1);
+    /* Set the background color with alpha for a translucent effect */
+    border-radius: 50%;
+    /* Make the pseudo-element circular */
+    opacity: 0;
+    /* Initially make the pseudo-element transparent */
+    transition: opacity 500ms linear, transform 750ms ease-in-out;
+    /* Add transitions for smooth effects */
+}
+
+/* Styles for the effect on the large button when hovered or focused */
+.large-button:hover::after,
+.large-button:focus::after {
+    opacity: 1;
+    /* Make the pseudo-element visible on hover or focus */
+    transform: scale(1.5);
+    /* Scale the pseudo-element to create a magnifying effect */
+}
+
+/* Styles for the destination item container */
+.destination-item {
+    display: flex;
+    /* Use flexbox to arrange the destination item content */
+}
+
+/* Styles for the destination item name */
+.destination-item-name {
+    color: white;
+    /* Set text color for the destination item name */
+    font-size: 95px;
+    /* Set the font size for the destination item name */
+    font-family: Bellefair;
+    /* Use Bellefair font for the destination item name */
+    font-weight: 400;
+    /* Set font weight for the destination item name */
+    word-wrap: break-word;
+    /* Allow word wrapping for long names */
+}
+
+/* Styling for the horizontal rectangle divider */
+#rectangle {
+    width: 444px;
+    /* Set the width of the rectangle */
+    height: 1px;
+    /* Set the height of the rectangle */
+    background: #383B4B;
+    /* Set the background color of the rectangle */
+    margin-top: 2rem;
+    /* Add top margin to create space above the rectangle */
+    margin-bottom: 1rem;
+    /* Add bottom margin to create space below the rectangle */
+}
+
+/* Styling for the destination item description */
+.destination-item-descript {
+    width: 444px;
+    /* Set the width of the description element */
+    color: #D0D6F9;
+    /* Set text color for the description */
+    font-size: 16px;
+    /* Set the font size for the description */
+    font-family: Barlow;
+    /* Use Barlow font for the description */
+    font-weight: 400;
+    /* Set font weight for the description */
+    line-height: 32px;
+    /* Set line height for the description */
+    word-wrap: break-word;
+    /* Allow word wrapping for long descriptions */
+}
+
+/* Styling for navigation links */
+.nav-link {
+    padding-bottom: 1rem;
+    /* Add bottom padding for spacing between links */
+}
+
+/* Styling for the active navigation dot */
+.nav-dot.active div {
+    opacity: 1 !important;
+    /* Set full opacity for the active dot */
+}
+
+/* Styling for the crew item container */
+.crew-item {
+    display: flex;
+    /* Use flexbox to arrange the crew item content */
+}
+
+/* Styling for the tab list container */
+.tab-list {
+    display: block;
+    /* Change the display to block for proper layout */
+}
+
+/* Styling for the circular shape with text inside */
+.circle {
+    width: 60px;
+    /* Set the width of the circle */
+    height: 60px;
+    /* Set the height of the circle */
+
+    display: flex;
+    /* Use flexbox to center the text */
+    justify-content: center;
+    /* Center the text horizontally */
+    align-items: center;
+    /* Center the text vertically */
+    font-size: 23px;
+    /* Set the font size for the text */
+
+    border-radius: 80px;
+    /* Make the shape circular with border-radius */
+    border: 1px solid #FFF;
+    /* Add a white border around the circle */
+    opacity: 0.25;
+    /* Set initial opacity to 0.25 for a semi-transparent look */
+}
+
+/* Styles for the circular shape with number inside */
+.circle.number {
+    text-align: center;
+    /* Center the content inside the circle */
+    color: white;
+    /* Set text color to white */
+    opacity: 1 !important;
+    /* Set full opacity for the circle with number */
+}
+
+/* Hover effect for the circular shape */
+.circle:hover {
+    opacity: 1;
+    /* Increase opacity on hover to make it fully visible */
+}
+
+/* Styles for the technology item container */
+.technology-item {
+    display: flex;
+    /* Use flexbox to arrange the technology item content */
+}
+
+/* Styles for the navbar toggler button */
+.navbar-toggler {
+    background-color: rgb(82, 82, 82) !important;
+    /* Set the background color for the toggler button */
+    /* Replace with your desired transparent color */
+    border: none;
+    /* Remove border from the toggler button */
+    box-shadow: 0 0 5px rgba(119, 118, 118, 0.5) !important;
+    /* Add a subtle shadow effect to the toggler button */
+}
+
+
+
+
+/* Media query for screens with a maximum width of 1000px */
+@media only screen and (max-width: 1000px) {
+    .the-line {
+        display: none;
+        /* Hide the horizontal line on smaller screens */
+    }
+}
+
+/* Media query for screens with a maximum width of 768px */
+@media only screen and (max-width: 768px) {
+    body {
+        margin-bottom: 130px;
+        /* Add bottom margin to the body on smaller screens */
+        background: url(./assets/home/background-home-tablet.jpg);
+        /* Change background image */
+    }
+
+    .the-line {
+        display: none;
+        /* Hide the horizontal line on smaller screens */
+    }
+
+    #sub-head {
+        color: #D0D6F9;
+        /* Change text color for the sub-head element */
+        text-align: center;
+        /* Center-align the text in the sub-head element */
+        font-size: 20px;
+        /* Adjust font size for the sub-head element */
+        font-family: Barlow Condensed;
+        /* Change font family for the sub-head element */
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        letter-spacing: 3.375px;
+        /* Adjust letter spacing for the sub-head element */
+        margin-right: 5rem;
+        /* Add right margin to the sub-head element */
+        margin-bottom: 2rem;
+        /* Add bottom margin to the sub-head element */
+    }
+
+    #main-head {
+        color: #FFF;
+        /* Change text color for the main-head element */
+        font-size: 120px;
+        /* Adjust font size for the main-head element */
+        font-family: Bellefair;
+        /* Change font family for the main-head element */
+        font-style: normal;
+        font-weight: 400;
+        line-height: 150px;
+        /* Adjust line height for the main-head element */
+        margin-bottom: 4.5rem;
+        /* Add bottom margin to the main-head element */
+        margin-left: 1rem !important;
+        /* Add left margin to the main-head element (important to override other styles) */
+    }
+
+    #explain {
+        display: flex;
+        /* Change display to flex to arrange elements in a column */
+        width: 444px;
+        /* Set fixed width for the explain element */
+        flex-direction: column;
+        /* Arrange elements in a column */
+        flex-shrink: 0;
+        /* Prevent the element from shrinking in a flex container */
+
+        color: #D0D6F9;
+        /* Change text color for the explain element */
+        text-align: center;
+        /* Center-align the text in the explain element */
+        font-size: 16px;
+        /* Adjust font size for the explain element */
+        font-family: Barlow;
+        /* Change font family for the explain element */
+        font-style: normal;
+        font-weight: 400;
+        line-height: 28px;
+        /* Adjust line height for the explain element */
+        margin-left: 2rem;
+        /* Add left margin to the explain element */
+    }
+
+    #home-page-large-btn {
+        width: 242px;
+        /* Adjust width for the home-page-large-btn element */
+        height: 242px;
+        /* Adjust height for the home-page-large-btn element */
+        flex-shrink: 0;
+        /* Prevent the element from shrinking in a flex container */
+        border-radius: 242px;
+        /* Make the element circular with border-radius */
+        background: #FFF;
+        /* Change background color for the home-page-large-btn element */
+        margin-top: 15rem;
+        /* Add top margin to the home-page-large-btn element */
+        top: 350px;
+        /* Adjust top position for the home-page-large-btn element */
+        right: 130px;
+        /* Adjust right position for the home-page-large-btn element */
+        align-items: center;
+        /* Center-align the content in the element */
+        justify-content: center;
+        /* Center-align the content in the element */
+        text-align: center;
+        /* Center-align the text in the element */
+    }
+
+    #home-page-content {
+        display: block !important;
+        /* Set the display to block (important to override other styles) */
+    }
+
+    #home-page-para {
+        display: block;
+        /* Set the display to block */
+        justify-content: center;
+        /* Center-align the content in the element */
+        align-items: center;
+        /* Center-align the content in the element */
+    }
+
+    #navbarSupportedContent ul {
+        border-radius: 20px;
+        /* Add border radius to the unordered list */
+        margin-top: 3rem;
+        /* Add top margin to the unordered list */
+    }
+
+    .nav-link:hover {
+        border-bottom: none;
+        /* Remove bottom border on hover for navigation links */
+    }
+
+    .nav-dot .active {
+        margin-bottom: 3rem;
+        /* Add bottom margin for active navigation dots */
+    }
+
+    .nav-link:hover {
+        color: #FFFFFF;
+        /* Change text color on hover for navigation links */
+        border-bottom: 2px solid white;
+        /* Add bottom border on hover for navigation links */
+        border-radius: 2px;
+        /* Add border radius on hover for navigation links */
+    }
+
+    .nav-item .active {
+        color: white !important;
+        /* Change text color for active navigation item */
+        border-bottom: 2px solid white;
+        /* Add bottom border for active navigation item */
+        border-radius: 2px;
+        /* Add border radius for active navigation item */
+        border-width: 2px;
+        /* Adjust border width for active navigation item */
+    }
+}
+
+/* Media query for screens with a maximum width of 600px */
+@media only screen and (max-width: 600px) {
+    #home-page-para {
+        justify-content: center;
+        /* Center-align content in home-page-para */
+        align-items: center;
+        /* Center-align content in home-page-para */
+        text-align: center;
+        /* Center-align text in home-page-para */
+        margin: 0;
+        /* Remove margins */
+        padding: 0;
+        /* Remove padding */
+    }
+
+    #sub-head {
+        font-size: 18px;
+        /* Adjust font size for sub-head element */
+        margin-right: 95px;
+        /* Adjust right margin for sub-head element */
+    }
+
+    #main-head {
+        display: flex;
+        /* Change display to flex to arrange elements */
+        padding-right: 150px !important;
+        /* Add right padding to main-head (important to override other styles) */
+    }
+
+    #explain {
+        font-size: 15px;
+        /* Adjust font size for explain element */
+        margin: 0;
+        /* Remove margins */
+        padding: 0;
+        /* Remove padding */
+        padding-right: 80px !important;
+        /* Add right padding to explain (important to override other styles) */
+        margin-left: 1rem;
+        /* Add left margin to explain element */
+    }
+
+    #home-page-large-btn {
+        text-align: center;
+        /* Center-align text in home-page-large-btn */
+        right: 110px;
+        /* Adjust right position for home-page-large-btn */
+        margin: 0;
+        /* Remove margins */
+        padding: 0;
+        /* Remove padding */
+    }
+}
+
+/* Media query for screens with a maximum width of 490px */
+@media only screen and (max-width: 490px) {
+    #sub-head {
+        color: #D0D6F9;
+        /* Change text color for the sub-head element */
+        text-align: center;
+        /* Center-align the text in the sub-head element */
+        font-size: 20px;
+        /* Adjust font size for the sub-head element */
+        font-family: Barlow Condensed;
+        /* Change font family for the sub-head element */
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        letter-spacing: 2.7px;
+        /* Adjust letter spacing for the sub-head element */
+    }
+
+    #main-head {
+        color: #FFF;
+        /* Change text color for the main-head element */
+        text-align: center;
+        /* Center-align the text in the main-head element */
+        font-size: 80px;
+        /* Adjust font size for the main-head element */
+        font-family: Bellefair;
+        /* Change font family for the main-head element */
+        font-style: normal;
+        font-weight: 400;
+        line-height: 100px;
+        /* Adjust line height for the main-head element */
+        margin: auto;
+        /* Center-align the element horizontally */
+        margin-right: 5rem;
+        /* Add right margin to the main-head element */
+    }
+
+    #explain {
+        display: flex;
+        /* Change display to flex to arrange elements in a column */
+        width: 444px;
+        /* Set fixed width for the explain element */
+        flex-direction: column;
+        /* Arrange elements in a column */
+        flex-shrink: 0;
+        /* Prevent the element from shrinking in a flex container */
+        color: #D0D6F9;
+        /* Change text color for the explain element */
+        text-align: center;
+        /* Center-align the text in the explain element */
+        font-size: 16px;
+        /* Adjust font size for the explain element */
+        font-family: Barlow;
+        /* Change font family for the explain element */
+        font-style: normal;
+        font-weight: 400;
+        line-height: 28px;
+        /* Adjust line height for the explain element */
+        margin-left: 2rem;
+        /* Add left margin to the explain element */
+    }
+
+    #home-page-large-btn {
+        width: 242px;
+        /* Adjust width for the home-page-large-btn element */
+        height: 242px;
+        /* Adjust height for the home-page-large-btn element */
+        flex-shrink: 0;
+        /* Prevent the element from shrinking in a flex container */
+        border-radius: 242px;
+        /* Make the element circular with border-radius */
+        background: #FFF;
+        /* Change background color for the home-page-large-btn element */
+        margin-top: 15rem;
+        /* Add top margin to the home-page-large-btn element */
+        top: 350px;
+        /* Adjust top position for the home-page-large-btn element */
+        right: 130px;
+        /* Adjust right position for the home-page-large-btn element */
+    }
+
+    #home-page-content {
+        display: block !important;
+        /* Set the display to block (important to override other styles) */
+    }
+
+    #home-page-para {
+        display: block;
+        /* Set the display to block */
+        justify-content: center;
+        /* Center-align the content in the element */
+        align-items: center;
+        /* Center-align the content in the element */
+    }
+}
